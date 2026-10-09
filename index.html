@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>HIB — Configure and order steel-frame site buildings</title>
-<meta name="description" content="Configure a washroom, mine dry, office, gym, staff suite or data hall module, see a fixed price and lead time, and reserve or send a PO-ready quote to procurement. Built in Nisku, Alberta.">
+<meta name="description" content="Configure a lavatory, mine dry, office, gym, staff suite or data hall module, see a fixed price and lead time, and reserve or send a PO-ready quote to procurement. Built in Nisku, Alberta.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400;62..125,500;62..125,700;62..125,800&display=swap" rel="stylesheet">
 <style>
@@ -141,14 +141,14 @@ section{padding:52px 0;border-bottom:1px solid var(--line)}
 <div class="nav">
   <div class="wrap">
     <a class="logo" href="#top" aria-label="HIB home"><b>HIB</b><i></i></a>
-    <div class="links"><a class="hide" href="/products/">Products</a><a class="hide" href="/dry50/">Dry 50</a><a class="hide" href="#how">How ordering works</a><a class="hide" href="#fleet">Fleet accounts</a><a class="hide" href="#about">About</a><a class="q" href="#configure">Configure a unit</a></div>
+    <div class="links"><a class="hide" href="/products/">Products</a><a class="hide" href="/lavatory/">Lavatory</a><a class="hide" href="/dry50/">Dry 50</a><a class="hide" href="#how">How ordering works</a><a class="hide" href="#fleet">Fleet accounts</a><a class="hide" href="#about">About</a><a class="q" href="#configure">Configure a unit</a></div>
   </div>
 </div>
 
 <header class="hero" id="top">
   <div class="wrap">
     <h1>Configure a unit. See the price. Book the slot.</h1>
-    <p>Steel-frame site buildings — washrooms, mine drys, offices, gyms, staff suites and data halls — with fixed list pricing, fixed lead times, and a PO-ready quote in one click. Order one to three units online; fleet orders go straight to a named rep.</p>
+    <p>Container lavatories and steel-frame site buildings — mine drys, offices, gyms, staff suites and data halls — with fixed list pricing, fixed lead times, and a PO-ready quote in one click. Order one to three units online; fleet orders go straight to a named rep.</p>
   </div>
 </header>
 <div class="strip"><div class="wrap"><span>Rated to −40 °C</span><span>12 ft wide, ships on a step deck</span><span>One connection wall</span><span>Built in Nisku, Alberta</span></div></div>
@@ -180,7 +180,7 @@ section{padding:52px 0;border-bottom:1px solid var(--line)}
     </div>
 
     <aside class="quote" aria-live="polite">
-      <div class="name" id="qName">HIB <span>Wash 8</span></div>
+      <div class="name" id="qName">HIB <span>Lav 3</span></div>
       <div class="dims" id="qDims"></div>
       <div class="lines" id="qLines"></div>
       <div class="total"><b id="qTotal">$0</b><span>per unit, CAD, list</span></div>
@@ -223,7 +223,7 @@ section{padding:52px 0;border-bottom:1px solid var(--line)}
       <div><b>10 yr</b><span>structure and envelope warranty</span></div>
     </div>
     <div class="docs">
-      <a href="#">Spec sheet — Wash (PDF)</a><a href="#">Spec sheet — Dry (PDF)</a><a href="#">Spec sheet — Work (PDF)</a>
+      <a href="/assets/hib-lav-two-pager.pdf">Spec sheet — Lavatory (PDF)</a><a href="/assets/hib-dry50-two-pager.pdf">Spec sheet — Dry (PDF)</a><a href="#">Spec sheet — Work (PDF)</a>
       <a href="#">Spec sheet — Compute (PDF)</a><a href="#">Foundation and site guide (PDF)</a><a href="#">Listings and structural stamp (PDF)</a>
     </div>
   </div>
@@ -258,11 +258,11 @@ section{padding:52px 0;border-bottom:1px solid var(--line)}
 <script>
 var FORM_URL=''; // Airtable form share URL goes here
 var PRODUCTS = {
-  wash:{name:'Wash',what:'Washrooms',lead:12,sizes:[
-    {k:'4',label:'Wash 4',sub:'4 stalls · 10 × 20 ft',price:95000},
-    {k:'8',label:'Wash 8',sub:'8 stalls · 12 × 32 ft',price:145000},
-    {k:'12',label:'Wash 12',sub:'12 stalls · 14 × 40 ft',price:195000}],
-    opts:[{k:'tanks',l:'Fresh and grey tanks, heat-traced',p:14000},{k:'split',l:'Split-gender layout',p:6500},{k:'shower',l:'Two shower stalls in place of two toilets',p:9500},{k:'hyd',l:'Hydronic floor instead of electric',p:8000},{k:'ext',l:'Exterior hand-wash station',p:3800}]},
+  lav:{name:'Lavatory',what:'Container lavatories',lead:10,sizes:[
+    {k:'2',label:'Lav 2',sub:'2 water closets · 8 × 10 ft',price:48000},
+    {k:'3',label:'Lav 3',sub:'3 water closets · 8 × 20 ft',price:78000},
+    {k:'6',label:'Lav 6',sub:'6 water closets · 8 × 40 ft',price:135000}],
+    opts:[{k:'direct',l:'Direct-connect in place of tanks',p:-6000},{k:'acc',l:'Accessible water closet',p:7500},{k:'urinal',l:'Urinals in place of one water closet',p:3200},{k:'hw',l:'Exterior hand-wash station',p:3800},{k:'solar',l:'Solar and battery package',p:14500},{k:'tele',l:'Fleet telemetry: tank levels, heat, door counts',p:2400}]},
   dry:{name:'Dry',what:'Mine dry',lead:12,sizes:[
     {k:'12',label:'Dry 12',sub:'12 lockers · 12 × 32 ft',price:185000},
     {k:'24',label:'Dry 24',sub:'24 lockers · 14 × 50 ft',price:285000},
@@ -272,7 +272,7 @@ var PRODUCTS = {
     {k:'8',label:'Work 8',sub:'8 seats · 12 × 32 ft',price:135000},
     {k:'12',label:'Work 12',sub:'12 seats · 14 × 40 ft',price:175000},
     {k:'20',label:'Work 20',sub:'20 seats · 14 × 50 ft',price:265000}],
-    opts:[{k:'wash',l:'Attached single washroom',p:18000},{k:'lunch',l:'Lunchroom fit-out: counter, fridge, sink',p:11000},{k:'meet',l:'Meeting room partition and door',p:6500},{k:'it',l:'Structured cabling and rack',p:5500},{k:'gen',l:'Generator-ready panel and inlet',p:4200}]},
+    opts:[{k:'wash',l:'Attached single water closet',p:18000},{k:'lunch',l:'Lunchroom fit-out: counter, fridge, sink',p:11000},{k:'meet',l:'Meeting room partition and door',p:6500},{k:'it',l:'Structured cabling and rack',p:5500},{k:'gen',l:'Generator-ready panel and inlet',p:4200}]},
   gym:{name:'Gym',what:'Gyms',lead:12,sizes:[
     {k:'1',label:'Gym 1',sub:'1 module · 14 × 50 ft',price:165000},
     {k:'2',label:'Gym 2',sub:'2 modules joined · 28 × 50 ft',price:310000}],
@@ -288,7 +288,7 @@ var PRODUCTS = {
     {k:'fitted400',label:'Compute 400 Fitted',sub:'Racks, cooling, PDUs · 24 × 56 ft',price:2800000}],
     opts:[{k:'cw',l:'Chilled-water cooling in place of DX',p:45000},{k:'econ',l:'Economizer for cold-climate sites',p:28000},{k:'seis',l:'California seismic anchoring package',p:12000},{k:'ups',l:'UPS installed and commissioned',p:95000}]}
 };
-var state={p:'wash',s:'8',o:{},pc:'',qty:1};
+var state={p:'lav',s:'3',o:{},pc:'',qty:1};
 function money(n){return '$'+Math.round(n).toLocaleString('en-CA');}
 function region(pc){
   pc=(pc||'').trim().toUpperCase(); if(!pc) return null;
@@ -304,10 +304,10 @@ function render(){
   var st=document.getElementById('sizeTiles'); st.innerHTML='';
   P.sizes.forEach(function(x){var b=document.createElement('button');b.className='size';b.type='button';b.setAttribute('aria-pressed',x.k===state.s);b.innerHTML='<b>'+x.label+'</b><span>'+x.sub+'</span><small>'+money(x.price)+'</small>';b.onclick=function(){state.s=x.k;render();};st.appendChild(b);});
   var op=document.getElementById('opts'); op.innerHTML='';
-  P.opts.forEach(function(x){var d=document.createElement('div');d.className='opt';var id='o_'+x.k;d.innerHTML='<label for="'+id+'"><input type="checkbox" id="'+id+'"'+(state.o[x.k]?' checked':'')+'> '+x.l+'</label><span class="pr">+ '+money(x.p)+'</span>';d.querySelector('input').onchange=function(e){state.o[x.k]=e.target.checked;render();};op.appendChild(d);});
+  P.opts.forEach(function(x){var d=document.createElement('div');d.className='opt';var id='o_'+x.k;d.innerHTML='<label for="'+id+'"><input type="checkbox" id="'+id+'"'+(state.o[x.k]?' checked':'')+'> '+x.l+'</label><span class="pr">'+(x.p<0?'− '+money(-x.p):'+ '+money(x.p))+'</span>';d.querySelector('input').onchange=function(e){state.o[x.k]=e.target.checked;render();};op.appendChild(d);});
   var lines=[], sum=S.price;
   lines.push(['<span>'+S.label+'</span>','<span>'+money(S.price)+'</span>']);
-  P.opts.forEach(function(x){if(state.o[x.k]){sum+=x.p;lines.push(['<span class="muted">'+x.l+'</span>','<span>'+money(x.p)+'</span>']);}});
+  P.opts.forEach(function(x){if(state.o[x.k]){sum+=x.p;lines.push(['<span class="muted">'+x.l+'</span>','<span>'+(x.p<0?'− '+money(-x.p):money(x.p))+'</span>']);}});
   var qty=Math.max(1,Math.min(50,parseInt(document.getElementById('qty').value,10)||1)); state.qty=qty;
   var disc=qty>=20?0.08:qty>=5?0.04:0; if(disc){lines.push(['<span class="muted">Fleet tier, '+qty+' units (list; rep quotes volume)</span>','<span>− '+money(sum*disc)+'</span>']);}
   var unit=sum*(1-disc);
